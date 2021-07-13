@@ -8,6 +8,11 @@
 import UIKit
 
 class QiblaViewController: UIViewController {
+    
+    // MARK: - Properties
+    // MARK: - Life Cycle
+    // MARK: - Helper Functions
+    // MARK: - Selectors
 
     override func viewDidLoad() {
         super.viewDidLoad()

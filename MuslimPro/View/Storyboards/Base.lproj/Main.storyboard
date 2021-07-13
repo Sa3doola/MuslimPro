@@ -6,13 +6,87 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="5IM-57-kV5">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="oGk-k2-DzT" customClass="OnboardingViewController" customModule="MuslimPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jf9-AN-zoX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y6-Kq-hnb">
+                                <rect key="frame" x="154" y="779" width="106" height="43"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.59999999999999998" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="Locate Me">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="configButtonTapped:" destination="oGk-k2-DzT" eventType="touchUpInside" id="RBP-C7-o80"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="v7q-wa-7VN">
+                                <rect key="frame" x="145.5" y="721" width="123" height="28"/>
+                                <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
+                                <color key="currentPageIndicatorTintColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-PK-GQg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="637"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kmD-c5-rBg">
+                                    <size key="itemSize" width="413" height="627"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="HbO-eC-XwG" customClass="OnboardingCollectionViewCell" customModule="MuslimPro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5" width="413" height="627"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Whm-LW-loY">
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="627"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="413" height="627"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="oGk-k2-DzT" id="Kca-9S-sr3"/>
+                                    <outlet property="delegate" destination="oGk-k2-DzT" id="JZH-jL-H0B"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="am6-wq-fP0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v7q-wa-7VN" firstAttribute="centerX" secondItem="jf9-AN-zoX" secondAttribute="centerX" id="3aJ-e5-jFX"/>
+                            <constraint firstItem="v7q-wa-7VN" firstAttribute="top" secondItem="Bba-PK-GQg" secondAttribute="bottom" constant="40" id="70I-lX-XaU"/>
+                            <constraint firstItem="Bba-PK-GQg" firstAttribute="leading" secondItem="am6-wq-fP0" secondAttribute="leading" id="DDU-c1-iex"/>
+                            <constraint firstItem="Bba-PK-GQg" firstAttribute="trailing" secondItem="am6-wq-fP0" secondAttribute="trailing" id="MPn-bn-glm"/>
+                            <constraint firstItem="am6-wq-fP0" firstAttribute="bottom" secondItem="8Y6-Kq-hnb" secondAttribute="bottom" constant="40" id="Odd-cP-nI4"/>
+                            <constraint firstItem="8Y6-Kq-hnb" firstAttribute="top" secondItem="v7q-wa-7VN" secondAttribute="bottom" constant="30" id="YLX-TY-jTe"/>
+                            <constraint firstItem="8Y6-Kq-hnb" firstAttribute="centerX" secondItem="jf9-AN-zoX" secondAttribute="centerX" id="eib-QB-Q8q"/>
+                            <constraint firstItem="Bba-PK-GQg" firstAttribute="top" secondItem="am6-wq-fP0" secondAttribute="top" id="fqb-uR-LXt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Bba-PK-GQg" id="xrZ-OG-Ard"/>
+                        <outlet property="configButton" destination="8Y6-Kq-hnb" id="tjb-nL-5hg"/>
+                        <outlet property="pageControl" destination="v7q-wa-7VN" id="hH2-28-nVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8H-mf-by5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2050.7246376811595" y="113.83928571428571"/>
+        </scene>
         <!--Base Tab Bar View Controller-->
         <scene sceneID="EUh-2k-2w0">
             <objects>
-                <tabBarController id="75i-Fd-taG" customClass="BaseTabBarViewController" customModule="MuslimPro" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="BaseTabBarViewController" id="75i-Fd-taG" customClass="BaseTabBarViewController" customModule="MuslimPro" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ddE-CA-TrZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -202,8 +276,14 @@
         <image name="QuranIcon" width="25" height="25"/>
         <image name="SettingsIcon" width="25" height="25"/>
         <image name="TimesIcon" width="25" height="25"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,10 +8,11 @@
 import UIKit
 
 class BaseTabBarViewController: UITabBarController {
+    
+    static let identifier = String(describing: BaseTabBarViewController.self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 

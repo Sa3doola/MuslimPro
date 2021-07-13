@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90BE51F269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90BE51E269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift */; };
+		D90BE525269D1E7B006D9A5A /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */; };
 		D91B8EC3269A54FC00935D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EC2269A54FC00935D0E /* AppDelegate.swift */; };
 		D91B8EC5269A54FC00935D0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EC4269A54FC00935D0E /* SceneDelegate.swift */; };
 		D91B8EC7269A54FC00935D0E /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EC6269A54FC00935D0E /* BaseTabBarViewController.swift */; };
@@ -18,9 +20,20 @@
 		D91B8EF1269A581E00935D0E /* QiblaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF0269A581E00935D0E /* QiblaViewController.swift */; };
 		D91B8EF4269A582A00935D0E /* QuranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF3269A582A00935D0E /* QuranViewController.swift */; };
 		D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF6269A583400935D0E /* SettingsViewController.swift */; };
+		D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */; };
+		D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */; };
+		D9D673F4269B3AB10026AEF9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */; };
+		D9D673F7269B3ABC0026AEF9 /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F6269B3ABC0026AEF9 /* NamesViewController.swift */; };
+		D9D67405269B41700026AEF9 /* azkar.json in Resources */ = {isa = PBXBuildFile; fileRef = D9D67404269B41700026AEF9 /* azkar.json */; };
+		D9D6740B269B46860026AEF9 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6740A269B46860026AEF9 /* Extentions.swift */; };
+		D9D67412269B49880026AEF9 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67411269B49880026AEF9 /* Manager.swift */; };
+		D9D67415269B4C3E0026AEF9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67414269B4C3E0026AEF9 /* LoadingViewController.swift */; };
+		D9D67418269B4DB60026AEF9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67417269B4DB60026AEF9 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D90BE51E269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		D91B8EBF269A54FC00935D0E /* MuslimPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91B8EC2269A54FC00935D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D91B8EC4269A54FC00935D0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +47,15 @@
 		D91B8EF0269A581E00935D0E /* QiblaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaViewController.swift; sourceTree = "<group>"; };
 		D91B8EF3269A582A00935D0E /* QuranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranViewController.swift; sourceTree = "<group>"; };
 		D91B8EF6269A583400935D0E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarViewController.swift; sourceTree = "<group>"; };
+		D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihViewController.swift; sourceTree = "<group>"; };
+		D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D9D673F6269B3ABC0026AEF9 /* NamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
+		D9D67404269B41700026AEF9 /* azkar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = azkar.json; sourceTree = "<group>"; };
+		D9D6740A269B46860026AEF9 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		D9D67411269B49880026AEF9 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		D9D67414269B4C3E0026AEF9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		D9D67417269B4DB60026AEF9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D90BE51D269D1D1D006D9A5A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D90BE51E269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		D91B8EB6269A54FB00935D0E = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +133,7 @@
 		D91B8EDB269A552700935D0E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -117,6 +148,8 @@
 		D91B8EDD269A553600935D0E /* Utitilies */ = {
 			isa = PBXGroup;
 			children = (
+				D9D67409269B46680026AEF9 /* Extentions */,
+				D9D67407269B441C0026AEF9 /* Json */,
 			);
 			path = Utitilies;
 			sourceTree = "<group>";
@@ -124,6 +157,7 @@
 		D91B8EDE269A554700935D0E /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				D9D67411269B49880026AEF9 /* Manager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -141,6 +175,7 @@
 		D91B8EE1269A556A00935D0E /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D90BE51D269D1D1D006D9A5A /* Onboarding */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -176,6 +211,10 @@
 		D91B8EE5269A55A800935D0E /* HomeCollection */ = {
 			isa = PBXGroup;
 			children = (
+				D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */,
+				D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */,
+				D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */,
+				D9D673F6269B3ABC0026AEF9 /* NamesViewController.swift */,
 			);
 			path = HomeCollection;
 			sourceTree = "<group>";
@@ -190,8 +229,26 @@
 		D91B8EE7269A55C000935D0E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				D9D67414269B4C3E0026AEF9 /* LoadingViewController.swift */,
+				D9D67417269B4DB60026AEF9 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D9D67407269B441C0026AEF9 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				D9D67404269B41700026AEF9 /* azkar.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		D9D67409269B46680026AEF9 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				D9D6740A269B46860026AEF9 /* Extentions.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +311,7 @@
 				D91B8ECF269A54FC00935D0E /* LaunchScreen.storyboard in Resources */,
 				D91B8ECC269A54FC00935D0E /* Assets.xcassets in Resources */,
 				D91B8ECA269A54FC00935D0E /* Main.storyboard in Resources */,
+				D9D67405269B41700026AEF9 /* azkar.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,11 +324,21 @@
 			files = (
 				D91B8EF1269A581E00935D0E /* QiblaViewController.swift in Sources */,
 				D91B8EC7269A54FC00935D0E /* BaseTabBarViewController.swift in Sources */,
+				D9D67415269B4C3E0026AEF9 /* LoadingViewController.swift in Sources */,
+				D90BE51F269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift in Sources */,
 				D91B8EC3269A54FC00935D0E /* AppDelegate.swift in Sources */,
+				D9D673F4269B3AB10026AEF9 /* CalendarViewController.swift in Sources */,
 				D91B8EC5269A54FC00935D0E /* SceneDelegate.swift in Sources */,
 				D91B8EEE269A581400935D0E /* TimesViewController.swift in Sources */,
+				D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */,
+				D9D673F7269B3ABC0026AEF9 /* NamesViewController.swift in Sources */,
+				D9D6740B269B46860026AEF9 /* Extentions.swift in Sources */,
 				D91B8EEB269A580A00935D0E /* HomeViewController.swift in Sources */,
+				D9D67418269B4DB60026AEF9 /* OnboardingViewController.swift in Sources */,
+				D90BE525269D1E7B006D9A5A /* OnboardingViewModel.swift in Sources */,
 				D91B8EF4269A582A00935D0E /* QuranViewController.swift in Sources */,
+				D9D67412269B49880026AEF9 /* Manager.swift in Sources */,
+				D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */,
 				D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A7J823U6W;
 				INFOPLIST_FILE = MuslimPro/Info.plist;
@@ -427,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TeamGiHub.MuslimPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -437,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A7J823U6W;
 				INFOPLIST_FILE = MuslimPro/Info.plist;
@@ -446,6 +517,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TeamGiHub.MuslimPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

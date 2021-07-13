@@ -1,5 +1,5 @@
 //
-//  TimesViewController.swift
+//  TasbihViewController.swift
 //  MuslimPro
 //
 //  Created by Saad Sherif on 7/11/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TimesViewController: UIViewController {
+class TasbihViewController: UIViewController {
     
     // MARK: - Properties
     // MARK: - Life Cycle
