@@ -15,6 +15,5 @@ class BaseTabBarViewController: UITabBarController {
         super.viewDidLoad()
     }
 
-
 }
 

@@ -20,6 +20,10 @@
 		D91B8EF1269A581E00935D0E /* QiblaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF0269A581E00935D0E /* QiblaViewController.swift */; };
 		D91B8EF4269A582A00935D0E /* QuranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF3269A582A00935D0E /* QuranViewController.swift */; };
 		D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF6269A583400935D0E /* SettingsViewController.swift */; };
+		D9A1BDB426A09E560012CD3C /* SegmentedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */; };
+		D9A1BDBA26A09F930012CD3C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDB926A09F930012CD3C /* Protocols.swift */; };
+		D9A1BDBE26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */; };
+		D9A1BDC126A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDC026A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift */; };
 		D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */; };
 		D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */; };
 		D9D673F4269B3AB10026AEF9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */; };
@@ -52,6 +56,10 @@
 		D91B8EF0269A581E00935D0E /* QiblaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaViewController.swift; sourceTree = "<group>"; };
 		D91B8EF3269A582A00935D0E /* QuranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranViewController.swift; sourceTree = "<group>"; };
 		D91B8EF6269A583400935D0E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonView.swift; sourceTree = "<group>"; };
+		D9A1BDB926A09F930012CD3C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarContainerCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9A1BDC026A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarViewController.swift; sourceTree = "<group>"; };
 		D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihViewController.swift; sourceTree = "<group>"; };
 		D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +140,7 @@
 		D91B8EDA269A551F00935D0E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D9A1BDB226A09E1F0012CD3C /* Custom */,
 				D91B8EE3269A558F00935D0E /* TableViewCell */,
 				D91B8EE1269A556A00935D0E /* CollectionViewCell */,
 				D91B8EE2269A557500935D0E /* Storyboards */,
@@ -159,6 +168,7 @@
 		D91B8EDD269A553600935D0E /* Utitilies */ = {
 			isa = PBXGroup;
 			children = (
+				D9A1BDB826A09E8B0012CD3C /* protocols */,
 				D9D67409269B46680026AEF9 /* Extentions */,
 				D9D67407269B441C0026AEF9 /* Json */,
 			);
@@ -187,6 +197,7 @@
 		D91B8EE1269A556A00935D0E /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D9A1BDBC26A0A7BC0012CD3C /* AthkarCollectionViewCell */,
 				D90BE51D269D1D1D006D9A5A /* Onboarding */,
 				D9F0A7C926A068BE002B022B /* HomeCollectionViewCell */,
 			);
@@ -247,6 +258,31 @@
 				D9D67417269B4DB60026AEF9 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D9A1BDB226A09E1F0012CD3C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		D9A1BDB826A09E8B0012CD3C /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D9A1BDB926A09F930012CD3C /* Protocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		D9A1BDBC26A0A7BC0012CD3C /* AthkarCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */,
+				D9A1BDC026A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift */,
+			);
+			path = AthkarCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		D9D67407269B441C0026AEF9 /* Json */ = {
@@ -361,10 +397,14 @@
 				D9D673F7269B3ABC0026AEF9 /* NamesViewController.swift in Sources */,
 				D9D6740B269B46860026AEF9 /* Extentions.swift in Sources */,
 				D91B8EEB269A580A00935D0E /* HomeViewController.swift in Sources */,
+				D9A1BDBA26A09F930012CD3C /* Protocols.swift in Sources */,
+				D9A1BDBE26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift in Sources */,
 				D9D67418269B4DB60026AEF9 /* OnboardingViewController.swift in Sources */,
+				D9A1BDC126A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift in Sources */,
 				D90BE525269D1E7B006D9A5A /* OnboardingViewModel.swift in Sources */,
 				D9F0A7CB26A068FA002B022B /* HomeCollectionViewCell.swift in Sources */,
 				D91B8EF4269A582A00935D0E /* QuranViewController.swift in Sources */,
+				D9A1BDB426A09E560012CD3C /* SegmentedButtonView.swift in Sources */,
 				D9D67412269B49880026AEF9 /* Manager.swift in Sources */,
 				D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */,
 				D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */,

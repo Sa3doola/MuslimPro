@@ -112,6 +112,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mUL-Qa-CU4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.31672427060000002" green="0.64786463979999998" blue="0.35478800539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="PtV-9e-smW" kind="relationship" relationship="rootViewController" id="pAS-YE-0cU"/>
@@ -129,6 +130,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oyX-2C-P1o">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.31672427060000002" green="0.64786463979999998" blue="0.35478800539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="x21-PJ-S1g" kind="relationship" relationship="rootViewController" id="Pcw-U9-Mct"/>
@@ -146,6 +148,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PRv-dj-f2f">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.31672427060000002" green="0.64786463979999998" blue="0.35478800539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="Ixg-Zq-RCP" kind="relationship" relationship="rootViewController" id="yTe-Z1-Bn5"/>
@@ -163,6 +166,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zvz-Ra-HVm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.31672427060000002" green="0.64786463979999998" blue="0.35478800539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="fdv-sx-DGD" kind="relationship" relationship="rootViewController" id="aKF-Za-7ir"/>
@@ -180,6 +184,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KQJ-m0-2Dt">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.36092796919999998" green="0.73867785929999996" blue="0.50698631999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="OxR-UR-brQ" kind="relationship" relationship="rootViewController" id="NCO-aN-TPC"/>
