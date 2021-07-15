@@ -24,11 +24,15 @@
 		D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */; };
 		D9D673F4269B3AB10026AEF9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */; };
 		D9D673F7269B3ABC0026AEF9 /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F6269B3ABC0026AEF9 /* NamesViewController.swift */; };
-		D9D67405269B41700026AEF9 /* azkar.json in Resources */ = {isa = PBXBuildFile; fileRef = D9D67404269B41700026AEF9 /* azkar.json */; };
 		D9D6740B269B46860026AEF9 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6740A269B46860026AEF9 /* Extentions.swift */; };
 		D9D67412269B49880026AEF9 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67411269B49880026AEF9 /* Manager.swift */; };
 		D9D67415269B4C3E0026AEF9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67414269B4C3E0026AEF9 /* LoadingViewController.swift */; };
 		D9D67418269B4DB60026AEF9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67417269B4DB60026AEF9 /* OnboardingViewController.swift */; };
+		D9F0A7A826A038D3002B022B /* AtkarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7A726A038D3002B022B /* AtkarModel.swift */; };
+		D9F0A7AC26A04254002B022B /* morningAthkar.json in Resources */ = {isa = PBXBuildFile; fileRef = D9F0A7AB26A04254002B022B /* morningAthkar.json */; };
+		D9F0A7AF26A0425D002B022B /* eveningAthkar.json in Resources */ = {isa = PBXBuildFile; fileRef = D9F0A7AE26A0425D002B022B /* eveningAthkar.json */; };
+		D9F0A7B326A04C04002B022B /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */; };
+		D9F0A7C526A04F45002B022B /* AthkarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,11 +55,15 @@
 		D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihViewController.swift; sourceTree = "<group>"; };
 		D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		D9D673F6269B3ABC0026AEF9 /* NamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
-		D9D67404269B41700026AEF9 /* azkar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = azkar.json; sourceTree = "<group>"; };
 		D9D6740A269B46860026AEF9 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		D9D67411269B49880026AEF9 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		D9D67414269B4C3E0026AEF9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		D9D67417269B4DB60026AEF9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D9F0A7A726A038D3002B022B /* AtkarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtkarModel.swift; sourceTree = "<group>"; };
+		D9F0A7AB26A04254002B022B /* morningAthkar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = morningAthkar.json; sourceTree = "<group>"; };
+		D9F0A7AE26A0425D002B022B /* eveningAthkar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eveningAthkar.json; sourceTree = "<group>"; };
+		D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +119,6 @@
 		D91B8ED7269A550600935D0E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D91B8EC6269A54FC00935D0E /* BaseTabBarViewController.swift */,
 				D91B8EE7269A55C000935D0E /* Onboarding */,
 				D91B8EE4269A55A300935D0E /* Core */,
 				D91B8EE5269A55A800935D0E /* HomeCollection */,
@@ -134,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */,
+				D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 		D91B8EDC269A553100935D0E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D9F0A7A726A038D3002B022B /* AtkarModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				D9D67411269B49880026AEF9 /* Manager.swift */,
+				D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -199,6 +209,7 @@
 		D91B8EE4269A55A300935D0E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D91B8EC6269A54FC00935D0E /* BaseTabBarViewController.swift */,
 				D91B8EEA269A580A00935D0E /* HomeViewController.swift */,
 				D91B8EED269A581400935D0E /* TimesViewController.swift */,
 				D91B8EF0269A581E00935D0E /* QiblaViewController.swift */,
@@ -238,7 +249,8 @@
 		D9D67407269B441C0026AEF9 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				D9D67404269B41700026AEF9 /* azkar.json */,
+				D9F0A7AB26A04254002B022B /* morningAthkar.json */,
+				D9F0A7AE26A0425D002B022B /* eveningAthkar.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -311,7 +323,8 @@
 				D91B8ECF269A54FC00935D0E /* LaunchScreen.storyboard in Resources */,
 				D91B8ECC269A54FC00935D0E /* Assets.xcassets in Resources */,
 				D91B8ECA269A54FC00935D0E /* Main.storyboard in Resources */,
-				D9D67405269B41700026AEF9 /* azkar.json in Resources */,
+				D9F0A7AF26A0425D002B022B /* eveningAthkar.json in Resources */,
+				D9F0A7AC26A04254002B022B /* morningAthkar.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +342,10 @@
 				D91B8EC3269A54FC00935D0E /* AppDelegate.swift in Sources */,
 				D9D673F4269B3AB10026AEF9 /* CalendarViewController.swift in Sources */,
 				D91B8EC5269A54FC00935D0E /* SceneDelegate.swift in Sources */,
+				D9F0A7C526A04F45002B022B /* AthkarViewModel.swift in Sources */,
+				D9F0A7B326A04C04002B022B /* Bundle-Decodable.swift in Sources */,
 				D91B8EEE269A581400935D0E /* TimesViewController.swift in Sources */,
+				D9F0A7A826A038D3002B022B /* AtkarModel.swift in Sources */,
 				D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */,
 				D9D673F7269B3ABC0026AEF9 /* NamesViewController.swift in Sources */,
 				D9D6740B269B46860026AEF9 /* Extentions.swift in Sources */,

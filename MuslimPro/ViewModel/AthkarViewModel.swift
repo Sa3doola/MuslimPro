@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+struct AthkarViewModel {
+    let count: Int
+    let description: String?
+    let zekr: String
+}

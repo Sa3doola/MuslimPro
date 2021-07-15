@@ -45,7 +45,7 @@ class OnboardingViewController: UIViewController {
         view.backgroundColor = .systemBackground
         configureCollectionView()
         configureViewModel()
-       // updateFlag()
+        updateFlag()
     }
     
     
