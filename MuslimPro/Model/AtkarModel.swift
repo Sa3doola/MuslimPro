@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Result {
+struct Results: Codable {
+    let results: [Result]
+}
+
+struct Result: Codable {
     let category: String
     let count: Int
     let description: String?

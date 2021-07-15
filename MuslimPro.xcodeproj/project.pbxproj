@@ -33,6 +33,7 @@
 		D9F0A7AF26A0425D002B022B /* eveningAthkar.json in Resources */ = {isa = PBXBuildFile; fileRef = D9F0A7AE26A0425D002B022B /* eveningAthkar.json */; };
 		D9F0A7B326A04C04002B022B /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */; };
 		D9F0A7C526A04F45002B022B /* AthkarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */; };
+		D9F0A7CB26A068FA002B022B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7CA26A068FA002B022B /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		D9F0A7AE26A0425D002B022B /* eveningAthkar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eveningAthkar.json; sourceTree = "<group>"; };
 		D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarViewModel.swift; sourceTree = "<group>"; };
+		D9F0A7CA26A068FA002B022B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				D90BE51D269D1D1D006D9A5A /* Onboarding */,
+				D9F0A7C926A068BE002B022B /* HomeCollectionViewCell */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -261,6 +264,14 @@
 				D9D6740A269B46860026AEF9 /* Extentions.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		D9F0A7C926A068BE002B022B /* HomeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D9F0A7CA26A068FA002B022B /* HomeCollectionViewCell.swift */,
+			);
+			path = HomeCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +363,7 @@
 				D91B8EEB269A580A00935D0E /* HomeViewController.swift in Sources */,
 				D9D67418269B4DB60026AEF9 /* OnboardingViewController.swift in Sources */,
 				D90BE525269D1E7B006D9A5A /* OnboardingViewModel.swift in Sources */,
+				D9F0A7CB26A068FA002B022B /* HomeCollectionViewCell.swift in Sources */,
 				D91B8EF4269A582A00935D0E /* QuranViewController.swift in Sources */,
 				D9D67412269B49880026AEF9 /* Manager.swift in Sources */,
 				D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */,
