@@ -11,6 +11,8 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     
+    let homeCollection = ["Athkar", "Tasbih", "Calendar", "Names"]
+    
     private let topView: UIView = {
         let view = UIView()
         return view
@@ -95,7 +97,29 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as? HomeCollectionViewCell else {
             fatalError("Could not load \(HomeCollectionViewCell.self)")
         }
+        cell.configure(with: homeCollection[indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        switch indexPath.row {
+        case 0:
+            let viewController  = AthkarViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        case 1:
+            let viewController  = TasbihViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        case 2:
+            let viewController  = CalendarViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        case 3:
+            let viewController  = NamesViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        default:
+            break
+        }
     }
     
 }

@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "Tsabeh@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Tsabeh@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Tsabeh@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
