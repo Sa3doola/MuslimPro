@@ -45,7 +45,7 @@ class OnboardingViewController: UIViewController {
         view.backgroundColor = .systemBackground
         configureCollectionView()
         configureViewModel()
-        updateFlag()
+       // updateFlag()
     }
     
     
@@ -100,12 +100,15 @@ class OnboardingViewController: UIViewController {
 // MARK: - CollectionView DelegateFlowLayout and Data Source
 
 extension OnboardingViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return slides.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OnboardingCollectionViewCell.identifier, for: indexPath) as? OnboardingCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OnboardingCollectionViewCell.identifier, for: indexPath) as? OnboardingCollectionViewCell else {
+            fatalError("Could not Load \(OnboardingCollectionViewCell.self)")
+        }
         cell.configure(viewModel: slides[indexPath.row])
         return cell
     }

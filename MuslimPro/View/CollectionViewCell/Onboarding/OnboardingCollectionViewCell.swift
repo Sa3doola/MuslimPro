@@ -44,6 +44,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         stack.alignment = .center
         stack.axis = .vertical
         stack.distribution = .fillProportionally
+        stack.spacing = 10
         return stack
     }()
     
@@ -64,21 +65,21 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         imageView.centerXInSuperview()
-        let imageHeight = contentView.width - 30
+        let imagesize = contentView.width - 40
         imageView.anchor(top: contentView.topAnchor,
                          leading: nil,
                          bottom: stackView.topAnchor,
                          trailing: nil,
-                         padding: .init(top: 20, left: 0, bottom: 0, right: 0),
-                         size: .init(width: contentView.width - 30,
-                                     height: contentView.width - 30))
+                         padding: .init(top: 10, left: 0, bottom: 10, right: 0),
+                         size: .init(width: imagesize,
+                                     height: imagesize))
         
-        let stackViewHeight = contentView.height - imageHeight - 20
+        let stackViewHeight = contentView.height - imagesize - 20
         stackView.anchor(top: imageView.bottomAnchor,
                          leading: contentView.leadingAnchor,
                          bottom: contentView.bottomAnchor,
                          trailing: contentView.trailingAnchor,
-                         padding: .init(top: 0, left: 10, bottom: 0, right: 10),
+                         padding: .init(top: 10, left: 10, bottom: 0, right: 10),
                          size: .init(width: contentView.width - 20,
                                      height: stackViewHeight))
     }
