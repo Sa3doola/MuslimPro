@@ -13,16 +13,19 @@ class AthkarContainerCollectionViewCell: UICollectionViewCell {
     
     static let identifier = String(describing: AthkarContainerCollectionViewCell.self)
     
-   
-    
     // MARK: - Life Cycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .systemBackground
+        backgroundColor = .systemBackground
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
 }
+

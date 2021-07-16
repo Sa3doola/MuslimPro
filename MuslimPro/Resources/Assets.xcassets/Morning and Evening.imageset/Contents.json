@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "—Pngtree—islamic star light ramadan green_1345027.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "—Pngtree—islamic star light ramadan green_1345027@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "—Pngtree—islamic star light ramadan green_1345027@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
