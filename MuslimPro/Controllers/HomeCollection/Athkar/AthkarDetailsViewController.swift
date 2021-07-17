@@ -90,12 +90,12 @@ extension AthkarDetailsViewController: UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.width,
+        return CGSize(width: collectionView.width - 20,
                       height: collectionView.height - 30)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
