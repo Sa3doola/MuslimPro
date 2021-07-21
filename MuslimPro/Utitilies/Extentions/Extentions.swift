@@ -183,3 +183,14 @@ extension UIView {
 struct AnchoredConstraints {
     var top, leading, bottom, trailing, width, height: NSLayoutConstraint?
 }
+
+
+/**
+    CollectionView for estimatedSize to set Width
+ */
+extension UICollectionView {
+    var widsetCellWidth: CGFloat {
+        let insets = contentInset.left + contentInset.right
+        return bounds.width - insets
+    }
+}

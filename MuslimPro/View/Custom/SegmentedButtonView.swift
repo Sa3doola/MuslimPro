@@ -32,7 +32,7 @@ class SegmentedButtonsView: UIView, CollectionViewDidScrollDelegate{
     private func configSelectedTap(){
         let segmentsCount = CGFloat(titles.count)
         let selectorWidth = self.frame.width / segmentsCount
-        selectorView = UIView(frame: CGRect(x: 0, y: self.frame.height - 0.8, width: selectorWidth, height: 1))
+        selectorView = UIView(frame: CGRect(x: 0, y: self.frame.height - 4, width: selectorWidth, height: 4))
         selectorView.backgroundColor = #colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1)
         addSubview(selectorView)
     }
