@@ -60,7 +60,6 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
-        navigationItem.backButtonTitle = ""
     }
     
     override func viewDidLayoutSubviews() {
@@ -107,7 +106,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         switch indexPath.row {
         case 0:
-            let viewController  = AthkarViewController()
+            let viewController  = AthkarDetailsViewController()
             navigationController?.pushViewController(viewController, animated: true)
         case 1:
             let viewController  = TasbihViewController()

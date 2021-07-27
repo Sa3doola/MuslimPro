@@ -20,13 +20,12 @@
 		D91B8EF1269A581E00935D0E /* QiblaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF0269A581E00935D0E /* QiblaViewController.swift */; };
 		D91B8EF4269A582A00935D0E /* QuranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF3269A582A00935D0E /* QuranViewController.swift */; };
 		D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF6269A583400935D0E /* SettingsViewController.swift */; };
-		D92B132826A1C1F80055607B /* MuslimAthkarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B132726A1C1F80055607B /* MuslimAthkarCollectionViewCell.swift */; };
-		D92B132C26A1C2650055607B /* AthkarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B132B26A1C2650055607B /* AthkarDetailsViewController.swift */; };
+		D94F204026ACB38100FC5145 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F203F26ACB38100FC5145 /* CounterView.swift */; };
 		D9A1BDB426A09E560012CD3C /* SegmentedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */; };
 		D9A1BDBA26A09F930012CD3C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDB926A09F930012CD3C /* Protocols.swift */; };
 		D9A1BDBE26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */; };
 		D9A1BDC126A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDC026A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift */; };
-		D9C3B88826A1D49D00478EC6 /* MuslimAthkarCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C3B88726A1D49D00478EC6 /* MuslimAthkarCellViewModel.swift */; };
+		D9A6005426AF243E0061ECD1 /* SnapingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6005326AF243E0061ECD1 /* SnapingCollectionViewLayout.swift */; };
 		D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */; };
 		D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */; };
 		D9D673F4269B3AB10026AEF9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */; };
@@ -35,12 +34,18 @@
 		D9D67412269B49880026AEF9 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67411269B49880026AEF9 /* Manager.swift */; };
 		D9D67415269B4C3E0026AEF9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67414269B4C3E0026AEF9 /* LoadingViewController.swift */; };
 		D9D67418269B4DB60026AEF9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D67417269B4DB60026AEF9 /* OnboardingViewController.swift */; };
+		D9D9312926B0021A00F76122 /* TimesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D9312826B0021A00F76122 /* TimesTableViewCell.swift */; };
+		D9EEA9C726ADC6B500CF83D0 /* Names.json in Resources */ = {isa = PBXBuildFile; fileRef = D9EEA9C626ADC6B500CF83D0 /* Names.json */; };
+		D9EEA9CA26ADC82E00CF83D0 /* NamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEA9C926ADC82E00CF83D0 /* NamesModel.swift */; };
+		D9EEA9CE26ADCADC00CF83D0 /* NamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEA9CD26ADCADC00CF83D0 /* NamesViewModel.swift */; };
+		D9EEA9D226ADCB1F00CF83D0 /* NamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EEA9D126ADCB1F00CF83D0 /* NamesTableViewCell.swift */; };
 		D9F0A7A826A038D3002B022B /* AtkarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7A726A038D3002B022B /* AtkarModel.swift */; };
-		D9F0A7AC26A04254002B022B /* morningAthkar.json in Resources */ = {isa = PBXBuildFile; fileRef = D9F0A7AB26A04254002B022B /* morningAthkar.json */; };
-		D9F0A7AF26A0425D002B022B /* eveningAthkar.json in Resources */ = {isa = PBXBuildFile; fileRef = D9F0A7AE26A0425D002B022B /* eveningAthkar.json */; };
+		D9F0A7AC26A04254002B022B /* Morning.json in Resources */ = {isa = PBXBuildFile; fileRef = D9F0A7AB26A04254002B022B /* Morning.json */; };
+		D9F0A7AF26A0425D002B022B /* Evening.json in Resources */ = {isa = PBXBuildFile; fileRef = D9F0A7AE26A0425D002B022B /* Evening.json */; };
 		D9F0A7B326A04C04002B022B /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */; };
 		D9F0A7C526A04F45002B022B /* AthkarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */; };
 		D9F0A7CB26A068FA002B022B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0A7CA26A068FA002B022B /* HomeCollectionViewCell.swift */; };
+		D9F453B426AEEC1700CDEFD6 /* TasbihCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F453B326AEEC1700CDEFD6 /* TasbihCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,13 +64,12 @@
 		D91B8EF0269A581E00935D0E /* QiblaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaViewController.swift; sourceTree = "<group>"; };
 		D91B8EF3269A582A00935D0E /* QuranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranViewController.swift; sourceTree = "<group>"; };
 		D91B8EF6269A583400935D0E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		D92B132726A1C1F80055607B /* MuslimAthkarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuslimAthkarCollectionViewCell.swift; sourceTree = "<group>"; };
-		D92B132B26A1C2650055607B /* AthkarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarDetailsViewController.swift; sourceTree = "<group>"; };
+		D94F203F26ACB38100FC5145 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonView.swift; sourceTree = "<group>"; };
 		D9A1BDB926A09F930012CD3C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarContainerCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9A1BDC026A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
-		D9C3B88726A1D49D00478EC6 /* MuslimAthkarCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuslimAthkarCellViewModel.swift; sourceTree = "<group>"; };
+		D9A6005326AF243E0061ECD1 /* SnapingCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapingCollectionViewLayout.swift; sourceTree = "<group>"; };
 		D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarViewController.swift; sourceTree = "<group>"; };
 		D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihViewController.swift; sourceTree = "<group>"; };
 		D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -74,12 +78,18 @@
 		D9D67411269B49880026AEF9 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		D9D67414269B4C3E0026AEF9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		D9D67417269B4DB60026AEF9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D9D9312826B0021A00F76122 /* TimesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTableViewCell.swift; sourceTree = "<group>"; };
+		D9EEA9C626ADC6B500CF83D0 /* Names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Names.json; sourceTree = "<group>"; };
+		D9EEA9C926ADC82E00CF83D0 /* NamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesModel.swift; sourceTree = "<group>"; };
+		D9EEA9CD26ADCADC00CF83D0 /* NamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewModel.swift; sourceTree = "<group>"; };
+		D9EEA9D126ADCB1F00CF83D0 /* NamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesTableViewCell.swift; sourceTree = "<group>"; };
 		D9F0A7A726A038D3002B022B /* AtkarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtkarModel.swift; sourceTree = "<group>"; };
-		D9F0A7AB26A04254002B022B /* morningAthkar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = morningAthkar.json; sourceTree = "<group>"; };
-		D9F0A7AE26A0425D002B022B /* eveningAthkar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eveningAthkar.json; sourceTree = "<group>"; };
+		D9F0A7AB26A04254002B022B /* Morning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Morning.json; sourceTree = "<group>"; };
+		D9F0A7AE26A0425D002B022B /* Evening.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Evening.json; sourceTree = "<group>"; };
 		D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarViewModel.swift; sourceTree = "<group>"; };
 		D9F0A7CA26A068FA002B022B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9F453B326AEEC1700CDEFD6 /* TasbihCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +103,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D90BE51D269D1D1D006D9A5A /* Onboarding */ = {
+		D90BE51D269D1D1D006D9A5A /* OnboardingCollection */ = {
 			isa = PBXGroup;
 			children = (
 				D90BE51E269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift */,
 			);
-			path = Onboarding;
+			path = OnboardingCollection;
 			sourceTree = "<group>";
 		};
 		D91B8EB6269A54FB00935D0E = {
@@ -138,7 +148,6 @@
 				D91B8EE7269A55C000935D0E /* Onboarding */,
 				D91B8EE4269A55A300935D0E /* Core */,
 				D91B8EE5269A55A800935D0E /* HomeCollection */,
-				D91B8EE6269A55B600935D0E /* Others */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,8 +166,9 @@
 		D91B8EDB269A552700935D0E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D9C3B88626A1D48200478EC6 /* Athkar */,
 				D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */,
+				D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */,
+				D9EEA9CD26ADCADC00CF83D0 /* NamesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -167,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				D9F0A7A726A038D3002B022B /* AtkarModel.swift */,
+				D9EEA9C926ADC82E00CF83D0 /* NamesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +185,7 @@
 		D91B8EDD269A553600935D0E /* Utitilies */ = {
 			isa = PBXGroup;
 			children = (
+				D9A6005126AF240E0061ECD1 /* Snaping */,
 				D9A1BDB826A09E8B0012CD3C /* protocols */,
 				D9D67409269B46680026AEF9 /* Extentions */,
 				D9D67407269B441C0026AEF9 /* Json */,
@@ -203,9 +215,10 @@
 		D91B8EE1269A556A00935D0E /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				D9A1BDBC26A0A7BC0012CD3C /* AthkarCollectionViewCell */,
-				D90BE51D269D1D1D006D9A5A /* Onboarding */,
-				D9F0A7C926A068BE002B022B /* HomeCollectionViewCell */,
+				D90BE51D269D1D1D006D9A5A /* OnboardingCollection */,
+				D9F0A7C926A068BE002B022B /* HomeCollection */,
+				D9A1BDBC26A0A7BC0012CD3C /* AthkarCollection */,
+				D9F453B126AEEBD700CDEFD6 /* TasbihCollection */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -222,6 +235,8 @@
 		D91B8EE3269A558F00935D0E /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D9EEA9D126ADCB1F00CF83D0 /* NamesTableViewCell.swift */,
+				D9D9312826B0021A00F76122 /* TimesTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -243,18 +258,11 @@
 			isa = PBXGroup;
 			children = (
 				D92B132A26A1C2350055607B /* Athkar */,
+				D94DEB3426ADE8A6009D4F10 /* Names */,
 				D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */,
 				D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */,
-				D9D673F6269B3ABC0026AEF9 /* NamesViewController.swift */,
 			);
 			path = HomeCollection;
-			sourceTree = "<group>";
-		};
-		D91B8EE6269A55B600935D0E /* Others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Others;
 			sourceTree = "<group>";
 		};
 		D91B8EE7269A55C000935D0E /* Onboarding */ = {
@@ -270,15 +278,23 @@
 			isa = PBXGroup;
 			children = (
 				D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */,
-				D92B132B26A1C2650055607B /* AthkarDetailsViewController.swift */,
 			);
 			path = Athkar;
+			sourceTree = "<group>";
+		};
+		D94DEB3426ADE8A6009D4F10 /* Names */ = {
+			isa = PBXGroup;
+			children = (
+				D9D673F6269B3ABC0026AEF9 /* NamesViewController.swift */,
+			);
+			path = Names;
 			sourceTree = "<group>";
 		};
 		D9A1BDB226A09E1F0012CD3C /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */,
+				D94F203F26ACB38100FC5145 /* CounterView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -291,30 +307,29 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
-		D9A1BDBC26A0A7BC0012CD3C /* AthkarCollectionViewCell */ = {
+		D9A1BDBC26A0A7BC0012CD3C /* AthkarCollection */ = {
 			isa = PBXGroup;
 			children = (
-				D92B132726A1C1F80055607B /* MuslimAthkarCollectionViewCell.swift */,
 				D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */,
 				D9A1BDC026A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift */,
 			);
-			path = AthkarCollectionViewCell;
+			path = AthkarCollection;
 			sourceTree = "<group>";
 		};
-		D9C3B88626A1D48200478EC6 /* Athkar */ = {
+		D9A6005126AF240E0061ECD1 /* Snaping */ = {
 			isa = PBXGroup;
 			children = (
-				D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */,
-				D9C3B88726A1D49D00478EC6 /* MuslimAthkarCellViewModel.swift */,
+				D9A6005326AF243E0061ECD1 /* SnapingCollectionViewLayout.swift */,
 			);
-			path = Athkar;
+			path = Snaping;
 			sourceTree = "<group>";
 		};
 		D9D67407269B441C0026AEF9 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				D9F0A7AB26A04254002B022B /* morningAthkar.json */,
-				D9F0A7AE26A0425D002B022B /* eveningAthkar.json */,
+				D9F0A7AB26A04254002B022B /* Morning.json */,
+				D9F0A7AE26A0425D002B022B /* Evening.json */,
+				D9EEA9C626ADC6B500CF83D0 /* Names.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -327,12 +342,20 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
-		D9F0A7C926A068BE002B022B /* HomeCollectionViewCell */ = {
+		D9F0A7C926A068BE002B022B /* HomeCollection */ = {
 			isa = PBXGroup;
 			children = (
 				D9F0A7CA26A068FA002B022B /* HomeCollectionViewCell.swift */,
 			);
-			path = HomeCollectionViewCell;
+			path = HomeCollection;
+			sourceTree = "<group>";
+		};
+		D9F453B126AEEBD700CDEFD6 /* TasbihCollection */ = {
+			isa = PBXGroup;
+			children = (
+				D9F453B326AEEC1700CDEFD6 /* TasbihCollectionViewCell.swift */,
+			);
+			path = TasbihCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,8 +418,9 @@
 				D91B8ECF269A54FC00935D0E /* LaunchScreen.storyboard in Resources */,
 				D91B8ECC269A54FC00935D0E /* Assets.xcassets in Resources */,
 				D91B8ECA269A54FC00935D0E /* Main.storyboard in Resources */,
-				D9F0A7AF26A0425D002B022B /* eveningAthkar.json in Resources */,
-				D9F0A7AC26A04254002B022B /* morningAthkar.json in Resources */,
+				D9F0A7AF26A0425D002B022B /* Evening.json in Resources */,
+				D9EEA9C726ADC6B500CF83D0 /* Names.json in Resources */,
+				D9F0A7AC26A04254002B022B /* Morning.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,24 +432,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91B8EF1269A581E00935D0E /* QiblaViewController.swift in Sources */,
+				D9D9312926B0021A00F76122 /* TimesTableViewCell.swift in Sources */,
 				D91B8EC7269A54FC00935D0E /* BaseTabBarViewController.swift in Sources */,
+				D9EEA9D226ADCB1F00CF83D0 /* NamesTableViewCell.swift in Sources */,
 				D9D67415269B4C3E0026AEF9 /* LoadingViewController.swift in Sources */,
-				D92B132826A1C1F80055607B /* MuslimAthkarCollectionViewCell.swift in Sources */,
 				D90BE51F269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift in Sources */,
 				D91B8EC3269A54FC00935D0E /* AppDelegate.swift in Sources */,
-				D9C3B88826A1D49D00478EC6 /* MuslimAthkarCellViewModel.swift in Sources */,
 				D9D673F4269B3AB10026AEF9 /* CalendarViewController.swift in Sources */,
 				D91B8EC5269A54FC00935D0E /* SceneDelegate.swift in Sources */,
 				D9F0A7C526A04F45002B022B /* AthkarViewModel.swift in Sources */,
 				D9F0A7B326A04C04002B022B /* Bundle-Decodable.swift in Sources */,
 				D91B8EEE269A581400935D0E /* TimesViewController.swift in Sources */,
+				D9EEA9CE26ADCADC00CF83D0 /* NamesViewModel.swift in Sources */,
 				D9F0A7A826A038D3002B022B /* AtkarModel.swift in Sources */,
-				D92B132C26A1C2650055607B /* AthkarDetailsViewController.swift in Sources */,
 				D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */,
 				D9D673F7269B3ABC0026AEF9 /* NamesViewController.swift in Sources */,
 				D9D6740B269B46860026AEF9 /* Extentions.swift in Sources */,
 				D91B8EEB269A580A00935D0E /* HomeViewController.swift in Sources */,
 				D9A1BDBA26A09F930012CD3C /* Protocols.swift in Sources */,
+				D9F453B426AEEC1700CDEFD6 /* TasbihCollectionViewCell.swift in Sources */,
+				D9A6005426AF243E0061ECD1 /* SnapingCollectionViewLayout.swift in Sources */,
 				D9A1BDBE26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift in Sources */,
 				D9D67418269B4DB60026AEF9 /* OnboardingViewController.swift in Sources */,
 				D9A1BDC126A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift in Sources */,
@@ -433,9 +459,11 @@
 				D9F0A7CB26A068FA002B022B /* HomeCollectionViewCell.swift in Sources */,
 				D91B8EF4269A582A00935D0E /* QuranViewController.swift in Sources */,
 				D9A1BDB426A09E560012CD3C /* SegmentedButtonView.swift in Sources */,
+				D9EEA9CA26ADC82E00CF83D0 /* NamesModel.swift in Sources */,
 				D9D67412269B49880026AEF9 /* Manager.swift in Sources */,
 				D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */,
 				D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */,
+				D94F204026ACB38100FC5145 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

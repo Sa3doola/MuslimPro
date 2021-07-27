@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "kisspng-picture-frames-line-art-clip-art-text-box-frame-5acfa5972a59b7.9857923115235577831735 (1).png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "kisspng-picture-frames-line-art-clip-art-text-box-frame-5acfa5972a59b7.9857923115235577831735 (1)@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "kisspng-picture-frames-line-art-clip-art-text-box-frame-5acfa5972a59b7.9857923115235577831735 (1)@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -35,16 +35,13 @@ class AthkarDetailsCollectionViewCell: UICollectionViewCell {
     
     private let footerView: UIView = {
         let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 0.9798579276, green: 1, blue: 0.4530350239, alpha: 1)
+        view.backgroundColor = .orange
         return view
     }()
     
-    private let counterButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .red
-        button.setTitle("0/3", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
-        return button
+    private let counterView: CounterView = {
+        let view = CounterView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        return view
     }()
     
     // MARK: - Life Cycle
@@ -64,22 +61,26 @@ class AthkarDetailsCollectionViewCell: UICollectionViewCell {
         configureUILayout()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        zekrLabel.text = ""
+        descriptionLabel.text = ""
+    }
+    
     override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
-        return contentView.systemLayoutSizeFitting(CGSize(width: targetSize.width, height: 200))
+        return contentView.systemLayoutSizeFitting(CGSize(width: targetSize.width, height: targetSize.height))
     }
    
     
     // MARK: - Helper Functions
  
     private func configure() {
+        contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(zekrLabel)
         contentView.addSubview(descriptionLabel)
         contentView.addSubview(footerView)
-        footerView.addSubview(counterButton)
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        counterButton.clipsToBounds = true
-        counterButton.layer.cornerRadius = 35
-        counterButton.addTarget(self, action: #selector(counterButtonAction(_:)), for: .touchUpInside)
+        footerView.addSubview(counterView)
+        counterView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(counterAction(_:))))
     }
     
     private func configureUILayout() {
@@ -92,26 +93,26 @@ class AthkarDetailsCollectionViewCell: UICollectionViewCell {
                                 leading: contentView.leadingAnchor,
                                 bottom: footerView.topAnchor,
                                 trailing: contentView.trailingAnchor,
-                                padding: .init(top: 5, left: 10, bottom: 5, right: 10))
+                                padding: .init(top: 5, left: 10, bottom: 15, right: 10))
         footerView.anchor(top: descriptionLabel.bottomAnchor,
                           leading: contentView.leadingAnchor,
                           bottom: contentView.bottomAnchor,
                           trailing: contentView.trailingAnchor,
-                          padding: .init(top: 5, left: 0, bottom: 0, right: 0),
+                          padding: .init(top: 15, left: 0, bottom: 0, right: 0),
                           size: .init(width: contentView.width,
                                       height: 100))
-        counterButton.centerInSuperview(size: .init(width: 70,
-                                                    height: 70))
+        counterView.centerInSuperview(size: .init(width: 90,
+                                                    height: 90))
     }
     
-    func config(with zekr: String, desc: String) {
-        zekrLabel.text = zekr
-        descriptionLabel.text = desc
+    func config(withViewModel viewModel: AthkarViewModel) {
+        zekrLabel.text = viewModel.zekr
+        descriptionLabel.text = viewModel.description
     }
     
     // MARK: - Selectors
     
-    @objc private func counterButtonAction(_ sender: UIButton) {
+    @objc private func counterAction(_ sender: UITapGestureRecognizer) {
         print("Counter")
     }
     

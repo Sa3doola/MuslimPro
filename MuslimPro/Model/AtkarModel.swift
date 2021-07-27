@@ -7,16 +7,11 @@
 
 import Foundation
 
-struct Results: Codable {
-    let results: [Result]
-}
-
-struct Result: Codable {
+struct AthkarModel: Codable {
     let category: String
     let count: Int
     let description: String?
     let reference: String?
     let zekr: String
 }
-
 
