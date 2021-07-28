@@ -15,6 +15,7 @@ class OnboardingViewController: UIViewController {
     
     private let storageManager = StorageManager.shared
     private let navigationManager = NaigationManager.shared
+    private let locationManager = LocationManager.shared
     
     var slides: [OnboardingViewModel] = []
     
@@ -86,10 +87,14 @@ class OnboardingViewController: UIViewController {
     @IBAction func configButtonTapped(_ sender: UIButton) {
         switch currentPage {
         case 0:
+            locationManager.getUserLocation { (location) in
+                print("Sucess")
+            }
             goToNextPage()
         case 1:
             goToNextPage()
         case 2:
+            
             navigationManager.show(screen: .baseTabBar, inController: self)
         default:
             goToNextPage()

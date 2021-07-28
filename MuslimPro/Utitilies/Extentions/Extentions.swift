@@ -12,12 +12,9 @@ import UIKit
  This Extention UIView provides an easy way to set programmic constraints
  It's a utility extention with static methods.
  */
-
 extension UIView {
-    
     /**
      Set anchor for view
-     
      - parameter top: NSLayoutYAxisAnchor for topAnchor
      - parameter leading: NSLayoutXAxisAnchor for leadingAnchor
      - parameter bottom: NSLayoutYAxisAnchor for bottomAnchor
@@ -27,7 +24,6 @@ extension UIView {
      
      - returns: NSLayoutConstraint for view
      */
-    
     @discardableResult
     func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) -> AnchoredConstraints {
         
@@ -62,14 +58,12 @@ extension UIView {
         
         return anchoredConstraints
     }
-    
     /**
      Make View fill SuperView
      
      - parameter padding: UIEdgeInsets for padding around view
 
      */
-    
     func fillSuperview(padding: UIEdgeInsets = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         if let superviewTopAnchor = superview?.topAnchor {
@@ -88,14 +82,12 @@ extension UIView {
             trailingAnchor.constraint(equalTo: superviewTrailingAnchor, constant: -padding.right).isActive = true
         }
     }
-    
     /**
      Make View Center In SuperView X and Y
      
      - parameter size: CGSize to set size for view
 
      */
-    
     func centerInSuperview(size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         if let superviewCenterXAnchor = superview?.centerXAnchor {
@@ -114,42 +106,34 @@ extension UIView {
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }
-    
     /**
      Make View Center In  X of SuperView
      */
-    
     func centerXInSuperview() {
         translatesAutoresizingMaskIntoConstraints = false
         if let superViewCenterXAnchor = superview?.centerXAnchor {
             centerXAnchor.constraint(equalTo: superViewCenterXAnchor).isActive = true
         }
     }
-    
     /**
      Make View Center In  Y of SuperView
      */
-    
     func centerYInSuperview() {
         translatesAutoresizingMaskIntoConstraints = false
         if let centerY = superview?.centerYAnchor {
             centerYAnchor.constraint(equalTo: centerY).isActive = true
         }
     }
-    
     /**
      Set Width Constraint
      */
-    
     func constrainWidth(constant: CGFloat) {
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: constant).isActive = true
     }
-    
     /**
      Set Height Constraint
      */
-    
     func constrainHeight(constant: CGFloat) {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: constant).isActive = true
@@ -179,12 +163,9 @@ extension UIView {
         return top + height
     }
 }
-
 struct AnchoredConstraints {
     var top, leading, bottom, trailing, width, height: NSLayoutConstraint?
 }
-
-
 /**
     CollectionView for estimatedSize to set Width
  */
@@ -192,5 +173,17 @@ extension UICollectionView {
     var widsetCellWidth: CGFloat {
         let insets = contentInset.left + contentInset.right
         return bounds.width - insets
+    }
+}
+
+/**
+    Extentions for AlertView
+ */
+extension UIAlertController {
+    
+    class func showAlert(title: String?, message: String?, andAction actions: [UIAlertAction] = [UIAlertAction(title: "Ok", style: .default, handler: nil)],from controller: UIViewController) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        actions.forEach({alert.addAction($0)})
+        controller.present(alert, animated: true, completion: nil)
     }
 }

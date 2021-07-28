@@ -15,12 +15,13 @@ class TasbihCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "Welcome"
         label.textAlignment = .center
+        label.textColor = .label
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .yellow
+        backgroundColor = .systemGroupedBackground
         contentView.addSubview(textLabel)
     }
     

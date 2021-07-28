@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0D8669DDE2F043833056C8 /* Pods_MuslimPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860720D15C08BCB6AD860316 /* Pods_MuslimPro.framework */; };
 		D90BE51F269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90BE51E269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift */; };
 		D90BE525269D1E7B006D9A5A /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */; };
 		D91B8EC3269A54FC00935D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EC2269A54FC00935D0E /* AppDelegate.swift */; };
@@ -20,12 +21,14 @@
 		D91B8EF1269A581E00935D0E /* QiblaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF0269A581E00935D0E /* QiblaViewController.swift */; };
 		D91B8EF4269A582A00935D0E /* QuranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF3269A582A00935D0E /* QuranViewController.swift */; };
 		D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF6269A583400935D0E /* SettingsViewController.swift */; };
+		D930E69726B0D60D00D13DBA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930E69626B0D60D00D13DBA /* LocationManager.swift */; };
 		D94F204026ACB38100FC5145 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F203F26ACB38100FC5145 /* CounterView.swift */; };
 		D9A1BDB426A09E560012CD3C /* SegmentedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */; };
 		D9A1BDBA26A09F930012CD3C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDB926A09F930012CD3C /* Protocols.swift */; };
 		D9A1BDBE26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */; };
 		D9A1BDC126A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDC026A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift */; };
 		D9A6005426AF243E0061ECD1 /* SnapingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6005326AF243E0061ECD1 /* SnapingCollectionViewLayout.swift */; };
+		D9B5844A26B0649300A0D3DB /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5844926B0649300A0D3DB /* CalendarTableViewCell.swift */; };
 		D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */; };
 		D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */; };
 		D9D673F4269B3AB10026AEF9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */; };
@@ -49,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BD840570E2B06168824BE5B /* Pods-MuslimPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuslimPro.debug.xcconfig"; path = "Target Support Files/Pods-MuslimPro/Pods-MuslimPro.debug.xcconfig"; sourceTree = "<group>"; };
+		860720D15C08BCB6AD860316 /* Pods_MuslimPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuslimPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90BE51E269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		D91B8EBF269A54FC00935D0E /* MuslimPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,12 +69,14 @@
 		D91B8EF0269A581E00935D0E /* QiblaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaViewController.swift; sourceTree = "<group>"; };
 		D91B8EF3269A582A00935D0E /* QuranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranViewController.swift; sourceTree = "<group>"; };
 		D91B8EF6269A583400935D0E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D930E69626B0D60D00D13DBA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D94F203F26ACB38100FC5145 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonView.swift; sourceTree = "<group>"; };
 		D9A1BDB926A09F930012CD3C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarContainerCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9A1BDC026A0B5750012CD3C /* AthkarDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9A6005326AF243E0061ECD1 /* SnapingCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapingCollectionViewLayout.swift; sourceTree = "<group>"; };
+		D9B5844926B0649300A0D3DB /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
 		D9D673ED269B3A900026AEF9 /* AthkarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarViewController.swift; sourceTree = "<group>"; };
 		D9D673F0269B3AA50026AEF9 /* TasbihViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihViewController.swift; sourceTree = "<group>"; };
 		D9D673F3269B3AB10026AEF9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 		D9F0A7C426A04F45002B022B /* AthkarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarViewModel.swift; sourceTree = "<group>"; };
 		D9F0A7CA26A068FA002B022B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9F453B326AEEC1700CDEFD6 /* TasbihCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihCollectionViewCell.swift; sourceTree = "<group>"; };
+		E13C582B5E86114843D56584 /* Pods-MuslimPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuslimPro.release.xcconfig"; path = "Target Support Files/Pods-MuslimPro/Pods-MuslimPro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0D8669DDE2F043833056C8 /* Pods_MuslimPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64626D7884AB52A0514E5B63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				860720D15C08BCB6AD860316 /* Pods_MuslimPro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D90BE51D269D1D1D006D9A5A /* OnboardingCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +133,8 @@
 			children = (
 				D91B8EC1269A54FC00935D0E /* MuslimPro */,
 				D91B8EC0269A54FC00935D0E /* Products */,
+				EFA0B7D671EE95AE976BE9D9 /* Pods */,
+				64626D7884AB52A0514E5B63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				D9D67411269B49880026AEF9 /* Manager.swift */,
+				D930E69626B0D60D00D13DBA /* LocationManager.swift */,
 				D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */,
 			);
 			path = Manager;
@@ -237,6 +257,7 @@
 			children = (
 				D9EEA9D126ADCB1F00CF83D0 /* NamesTableViewCell.swift */,
 				D9D9312826B0021A00F76122 /* TimesTableViewCell.swift */,
+				D9B5844926B0649300A0D3DB /* CalendarTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -358,6 +379,15 @@
 			path = TasbihCollection;
 			sourceTree = "<group>";
 		};
+		EFA0B7D671EE95AE976BE9D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BD840570E2B06168824BE5B /* Pods-MuslimPro.debug.xcconfig */,
+				E13C582B5E86114843D56584 /* Pods-MuslimPro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,9 +395,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D91B8ED3269A54FC00935D0E /* Build configuration list for PBXNativeTarget "MuslimPro" */;
 			buildPhases = (
+				832ED1CCBAD673017067C883 /* [CP] Check Pods Manifest.lock */,
 				D91B8EBB269A54FB00935D0E /* Sources */,
 				D91B8EBC269A54FB00935D0E /* Frameworks */,
 				D91B8EBD269A54FB00935D0E /* Resources */,
+				252E60C915763FF52E3DFA2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -426,6 +458,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		252E60C915763FF52E3DFA2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuslimPro/Pods-MuslimPro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuslimPro/Pods-MuslimPro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MuslimPro/Pods-MuslimPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		832ED1CCBAD673017067C883 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuslimPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D91B8EBB269A54FB00935D0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -448,6 +522,7 @@
 				D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */,
 				D9D673F7269B3ABC0026AEF9 /* NamesViewController.swift in Sources */,
 				D9D6740B269B46860026AEF9 /* Extentions.swift in Sources */,
+				D930E69726B0D60D00D13DBA /* LocationManager.swift in Sources */,
 				D91B8EEB269A580A00935D0E /* HomeViewController.swift in Sources */,
 				D9A1BDBA26A09F930012CD3C /* Protocols.swift in Sources */,
 				D9F453B426AEEC1700CDEFD6 /* TasbihCollectionViewCell.swift in Sources */,
@@ -462,6 +537,7 @@
 				D9EEA9CA26ADC82E00CF83D0 /* NamesModel.swift in Sources */,
 				D9D67412269B49880026AEF9 /* Manager.swift in Sources */,
 				D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */,
+				D9B5844A26B0649300A0D3DB /* CalendarTableViewCell.swift in Sources */,
 				D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */,
 				D94F204026ACB38100FC5145 /* CounterView.swift in Sources */,
 			);
@@ -607,6 +683,7 @@
 		};
 		D91B8ED4269A54FC00935D0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD840570E2B06168824BE5B /* Pods-MuslimPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -628,6 +705,7 @@
 		};
 		D91B8ED5269A54FC00935D0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13C582B5E86114843D56584 /* Pods-MuslimPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -121,5 +121,4 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             break
         }
     }
-    
 }

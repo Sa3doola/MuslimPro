@@ -40,7 +40,6 @@ class TasbihViewController: UIViewController {
         title = "Tasbih"
         view.backgroundColor = .systemBackground
         configure()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

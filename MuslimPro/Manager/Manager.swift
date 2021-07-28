@@ -14,9 +14,7 @@ import UIKit
  This Class UIView provides an easy way to Show onBoarding ViewController First time install App
  It's a utility Class with static methods.
  */
-
 class NaigationManager {
-    
     /**
      Singleton pattern
         SingleObject Class a static instance of itself.
@@ -26,19 +24,16 @@ class NaigationManager {
     /**
         enum for two main screen should show
      */
-    
     enum Screen {
         case onboarding
         case baseTabBar
     }
-    
     /**
      This function to set intialViewController to show
      
      - parameter screen: enum of Screen to switch
      - parameter inController: LoadingViewController should will present the correct ViewController
      */
-    
     func show(screen: Screen, inController: UIViewController) {
         var viewController: UIViewController?
         
@@ -57,11 +52,9 @@ class NaigationManager {
     }
 }
 
-
 // MARK: - Storage Manager
 
 class StorageManager {
-    
     /**
      Singleton pattern
         SingleObject  a static instance of itself.
@@ -73,29 +66,24 @@ class StorageManager {
     enum key: String {
         case onboardingSeen
     }
-    
     /**
      Check if onboarding is seen
      */
-    
     func isOnboardingSeen() -> Bool {
         userDefaults.bool(forKey: key.onboardingSeen.rawValue)
     }
-    
     /**
      Set onboarding is seen
      */
-    
     func setOnboardingSeen() {
         userDefaults.setValue(true, forKey: key.onboardingSeen.rawValue)
     }
-    
     /**
     Reset onboarding to show
      */
-    
     func resetOnboardingSeen() {
         userDefaults.setValue(false, forKey: key.onboardingSeen.rawValue)
     }
 }
+
 
