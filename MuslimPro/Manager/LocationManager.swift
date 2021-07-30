@@ -17,10 +17,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
     var location: CLLocation?
     
-    var completion: ((CLLocation) -> Void)?
-    
-    var viewController: UIViewController!
-    
+ //   var completion: ((CLLocation) -> Void)?
     
     // MARK: - init
     
@@ -35,7 +32,6 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     
     /**
      Use Significant Location Change Service
-        ///// startMySignificantLocationChanges
      */
     
     func startMySignificantLocationChanges() {
@@ -50,37 +46,18 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
      Get User Location function with completion
      */
     
-    public func getUserLocation(completion: @escaping ((CLLocation) -> Void)) {
-        self.completion = completion
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
+    public func requestLocationServices() {
+        locationManager.requestAlwaysAuthorization()
         startMySignificantLocationChanges()
     }
  
     // MARK: - CLLocationManager Delegate
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        switch status {
-        case .notDetermined:
-            print("notDetermined")
-        case .denied:
-            print("denied")
-        case .restricted:
-            print("restricted")
-        case .authorizedAlways, .authorizedWhenInUse:
-            startMySignificantLocationChanges()
-        @unknown default:
-            print("unknown default")
-        }
-    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else {
             return
         }
         self.location = location
-        completion?(location)
-        print("lat: \(location.coordinate.latitude) /n lon: \(location.coordinate.longitude)")
         locationManager.stopMonitoringSignificantLocationChanges()
     }
     

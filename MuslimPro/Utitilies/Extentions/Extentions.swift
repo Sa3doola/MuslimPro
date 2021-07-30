@@ -180,10 +180,59 @@ extension UICollectionView {
     Extentions for AlertView
  */
 extension UIAlertController {
-    
-    class func showAlert(title: String?, message: String?, andAction actions: [UIAlertAction] = [UIAlertAction(title: "Ok", style: .default, handler: nil)],from controller: UIViewController) {
+    func showAlert(title: String?, message: String?, andAction actions: [UIAlertAction] = [UIAlertAction(title: "Ok", style: .default, handler: nil)],from controller: UIViewController) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         actions.forEach({alert.addAction($0)})
         controller.present(alert, animated: true, completion: nil)
+    }
+}
+
+/**
+    Extentions for AlertView
+ */
+
+extension Date {
+    func currentMonth() -> String {
+        let calendar = Calendar.current
+        let month = calendar.component(.month, from: self)
+        
+        return String(describing: month)
+    }
+    
+    func currentYear() -> String {
+        let calendar = Calendar.current
+        let year = calendar.component(.year, from: self)
+        return String(describing: year)
+    }
+    
+    func firstDateOfYear() -> Date {
+        let year = Calendar.current.component(.year, from: self)
+        let dateComponents = DateComponents(year: year, month: 1, day: 1)
+        let firstDay = Calendar.current.date(from: dateComponents)!
+        return firstDay
+    }
+}
+
+extension String {
+    func editString(input: String) -> String {
+        let outPut = input.prefix(5)
+        return String(outPut)
+    }
+}
+
+extension DateFormatter {
+    func editTime(string: String) -> String {
+        
+        let timeFormmater = DateFormatter()
+        timeFormmater.dateFormat = "HH:mm"
+        
+        let timeFromString = timeFormmater.date(from: string)
+        
+        guard let date = timeFromString else { return "error with edit Time" }
+        timeFormmater.dateFormat = "h:mm a"
+        
+        let timeFromDate = timeFormmater.string(from: date)
+        
+        return timeFromDate
     }
 }

@@ -104,6 +104,6 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
 extension CalendarViewController: FSCalendarDelegate, FSCalendarDataSource {
     
     func minimumDate(for calendar: FSCalendar) -> Date {
-        return Date()
+        return Date().firstDateOfYear()
     }
 }

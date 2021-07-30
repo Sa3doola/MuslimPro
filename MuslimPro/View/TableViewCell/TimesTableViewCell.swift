@@ -15,7 +15,6 @@ class TimesTableViewCell: UITableViewCell {
     
     private let timeLabel: UILabel = {
         let label = UILabel()
-        label.text = "12:04 PM"
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 18, weight: .medium)
         label.backgroundColor = #colorLiteral(red: 0.3609279692, green: 0.7386778593, blue: 0.50698632, alpha: 1)

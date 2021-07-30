@@ -61,10 +61,6 @@ class TimesViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
-    // MARK: - Selectors
-
-    
 }
 
 // MARK: - UITableView Delegate and DataSource
@@ -79,7 +75,6 @@ extension TimesViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TimesTableViewCell.identifier, for: indexPath) as? TimesTableViewCell else {
             fatalError("Could not load tableCell \(TimesTableViewCell.self)")
         }
-        cell.backgroundColor = .red
         return cell
     }
     

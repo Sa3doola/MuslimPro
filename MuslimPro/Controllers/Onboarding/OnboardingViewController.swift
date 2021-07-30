@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class OnboardingViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class OnboardingViewController: UIViewController {
     private let storageManager = StorageManager.shared
     private let navigationManager = NaigationManager.shared
     private let locationManager = LocationManager.shared
+    private let delegate = CLLocationManager()
     
     var slides: [OnboardingViewModel] = []
     
@@ -47,6 +49,7 @@ class OnboardingViewController: UIViewController {
         configureCollectionView()
         configureViewModel()
         updateFlag()
+        delegate.delegate = self
     }
     
     
@@ -87,14 +90,11 @@ class OnboardingViewController: UIViewController {
     @IBAction func configButtonTapped(_ sender: UIButton) {
         switch currentPage {
         case 0:
-            locationManager.getUserLocation { (location) in
-                print("Sucess")
-            }
+            locationManager.requestLocationServices()
             goToNextPage()
         case 1:
             goToNextPage()
         case 2:
-            
             navigationManager.show(screen: .baseTabBar, inController: self)
         default:
             goToNextPage()
@@ -129,3 +129,40 @@ extension OnboardingViewController: UICollectionViewDataSource, UICollectionView
         pageControl.currentPage = currentPage
     }
 }
+
+// MARK: - LocationManager Delegate
+
+extension OnboardingViewController: CLLocationManagerDelegate {
+
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        
+        switch  status {
+        
+        case .notDetermined:
+            print("notDetermined")
+        case .restricted:
+            UIAlertController().showAlert(title: "Location Services Disable",
+                                          message: "Location access restricted from parent control",
+                                          from: self)
+        case .denied:
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            let settingAction = UIAlertAction(title: "Settings", style: .default) { (action) in
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
+            }
+            UIAlertController().showAlert(title: "Location Services Disable",
+                                          message: "Location access denied. Please allow it from Settings",
+                                          andAction: [settingAction, cancelAction], from: self)
+            
+        case .authorizedAlways, .authorizedWhenInUse:
+            self.locationManager.startMySignificantLocationChanges()
+            
+        @unknown default:
+            UIAlertController().showAlert(title: "Error",
+                                          message: "Something went wrong",
+                                          from: self)
+        }
+    }
+}
+

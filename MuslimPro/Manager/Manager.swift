@@ -7,6 +7,64 @@
 
 import Foundation
 import UIKit
+import CoreLocation
+
+// MARK: - ServicesManager
+
+class ServicesManager {
+    /**
+     Singleton pattern
+        SingleObject Class a static instance of itself.
+     */
+    static let shared = ServicesManager()
+    
+    func handleDataTimetoString(dataTime: [DataTime]) -> [String] {
+        
+        var array: [String] = []
+        
+        let currentDate = Date()
+        let dateFormmater = DateFormatter()
+        dateFormmater.dateFormat = "dd-MM-yyyy"
+        
+        let today = dateFormmater.string(from: currentDate)
+        
+        for choosen in dataTime {
+            if choosen.date.gregorian.date == today {
+                let timingModel = choosen.timings
+                
+                let imsakString = String().editString(input: timingModel.Imsak)
+                let imsakTime = DateFormatter().editTime(string: imsakString)
+                array.append(imsakTime)
+                
+                let fajrString = String().editString(input: timingModel.Fajr)
+                let fajrTime = DateFormatter().editTime(string: fajrString)
+                array.append(fajrTime)
+                
+                let sunriseString = String().editString(input: timingModel.Sunrise)
+                let sunriseTime = DateFormatter().editTime(string: sunriseString)
+                array.append(sunriseTime)
+                
+                let duhurString = String().editString(input: timingModel.Dhuhr)
+                let duhurTime = DateFormatter().editTime(string: duhurString)
+                array.append(duhurTime)
+                
+                let asrString = String().editString(input: timingModel.Asr)
+                let asrTime = DateFormatter().editTime(string: asrString)
+                array.append(asrTime)
+                
+                let maghribString = String().editString(input: timingModel.Maghrib)
+                let maghribTime = DateFormatter().editTime(string: maghribString)
+                array.append(maghribTime)
+                
+                let ishaString = String().editString(input: timingModel.Isha)
+                let ishaTime = DateFormatter().editTime(string: ishaString)
+                array.append(ishaTime)
+            }
+        }
+        return array
+    }
+}
+
 
 // MARK: - NavigationManager
 

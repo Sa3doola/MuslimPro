@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA0D8669DDE2F043833056C8 /* Pods_MuslimPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860720D15C08BCB6AD860316 /* Pods_MuslimPro.framework */; };
+		D904661426B1C2FA004427B0 /* PrayerTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904661326B1C2FA004427B0 /* PrayerTimeModel.swift */; };
 		D90BE51F269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90BE51E269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift */; };
 		D90BE525269D1E7B006D9A5A /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */; };
 		D91B8EC3269A54FC00935D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EC2269A54FC00935D0E /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 		D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B8EF6269A583400935D0E /* SettingsViewController.swift */; };
 		D930E69726B0D60D00D13DBA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D930E69626B0D60D00D13DBA /* LocationManager.swift */; };
 		D94F204026ACB38100FC5145 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F203F26ACB38100FC5145 /* CounterView.swift */; };
+		D978405926B1957E002476EF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978405826B1957E002476EF /* APIManager.swift */; };
 		D9A1BDB426A09E560012CD3C /* SegmentedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */; };
 		D9A1BDBA26A09F930012CD3C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDB926A09F930012CD3C /* Protocols.swift */; };
 		D9A1BDBE26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */; };
@@ -54,6 +56,7 @@
 /* Begin PBXFileReference section */
 		5BD840570E2B06168824BE5B /* Pods-MuslimPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuslimPro.debug.xcconfig"; path = "Target Support Files/Pods-MuslimPro/Pods-MuslimPro.debug.xcconfig"; sourceTree = "<group>"; };
 		860720D15C08BCB6AD860316 /* Pods_MuslimPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuslimPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D904661326B1C2FA004427B0 /* PrayerTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeModel.swift; sourceTree = "<group>"; };
 		D90BE51E269D1D3D006D9A5A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		D90BE524269D1E7B006D9A5A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		D91B8EBF269A54FC00935D0E /* MuslimPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +74,7 @@
 		D91B8EF6269A583400935D0E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D930E69626B0D60D00D13DBA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D94F203F26ACB38100FC5145 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		D978405826B1957E002476EF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		D9A1BDB326A09E560012CD3C /* SegmentedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonView.swift; sourceTree = "<group>"; };
 		D9A1BDB926A09F930012CD3C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D9A1BDBD26A0A7DE0012CD3C /* AthkarContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarContainerCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 		D91B8EDC269A553100935D0E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D904661326B1C2FA004427B0 /* PrayerTimeModel.swift */,
 				D9F0A7A726A038D3002B022B /* AtkarModel.swift */,
 				D9EEA9C926ADC82E00CF83D0 /* NamesModel.swift */,
 			);
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				D9D67411269B49880026AEF9 /* Manager.swift */,
+				D978405826B1957E002476EF /* APIManager.swift */,
 				D930E69626B0D60D00D13DBA /* LocationManager.swift */,
 				D9F0A7B226A04C04002B022B /* Bundle-Decodable.swift */,
 			);
@@ -517,6 +523,7 @@
 				D9F0A7C526A04F45002B022B /* AthkarViewModel.swift in Sources */,
 				D9F0A7B326A04C04002B022B /* Bundle-Decodable.swift in Sources */,
 				D91B8EEE269A581400935D0E /* TimesViewController.swift in Sources */,
+				D978405926B1957E002476EF /* APIManager.swift in Sources */,
 				D9EEA9CE26ADCADC00CF83D0 /* NamesViewModel.swift in Sources */,
 				D9F0A7A826A038D3002B022B /* AtkarModel.swift in Sources */,
 				D9D673F1269B3AA50026AEF9 /* TasbihViewController.swift in Sources */,
@@ -536,6 +543,7 @@
 				D9A1BDB426A09E560012CD3C /* SegmentedButtonView.swift in Sources */,
 				D9EEA9CA26ADC82E00CF83D0 /* NamesModel.swift in Sources */,
 				D9D67412269B49880026AEF9 /* Manager.swift in Sources */,
+				D904661426B1C2FA004427B0 /* PrayerTimeModel.swift in Sources */,
 				D9D673EE269B3A900026AEF9 /* AthkarViewController.swift in Sources */,
 				D9B5844A26B0649300A0D3DB /* CalendarTableViewCell.swift in Sources */,
 				D91B8EF7269A583400935D0E /* SettingsViewController.swift in Sources */,

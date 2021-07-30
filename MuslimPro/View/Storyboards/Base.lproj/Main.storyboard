@@ -173,7 +173,7 @@
                         <color key="barTintColor" red="0.31672427060000002" green="0.64786463979999998" blue="0.35478800539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="fdv-sx-DGD" kind="relationship" relationship="rootViewController" id="aKF-Za-7ir"/>
+                        <segue destination="mBP-TC-5o8" kind="relationship" relationship="rootViewController" id="ZnG-ph-BEy"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPl-80-Nh0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -264,18 +264,18 @@
             <point key="canvasLocation" x="-349" y="1576"/>
         </scene>
         <!--Settings View Controller-->
-        <scene sceneID="UJE-P2-Xjo">
+        <scene sceneID="FLN-Eb-xyA">
             <objects>
-                <viewController id="fdv-sx-DGD" customClass="SettingsViewController" customModule="MuslimPro" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hlm-XZ-M1H">
+                <viewController id="mBP-TC-5o8" customClass="SettingsViewController" customModule="MuslimPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Al9-Nw-EMO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="bOd-Wj-537"/>
+                        <viewLayoutGuide key="safeArea" id="fpf-Te-Fb0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Fnx-ON-WI4"/>
+                    <navigationItem key="navigationItem" id="5da-0i-P84"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xNi-S6-f8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXD-aP-Yzf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="486" y="1576"/>
         </scene>
